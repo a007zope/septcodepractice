@@ -1,0 +1,29 @@
+Whenever we want to achieve 100 % abstraction  i e want to completely
+hide the implementation logic then we can use interface
+
+Whenever we want to achieve partial abstraction that time we need to use abstract class 
+
+Abstract class is faster in execution as compared to interface due to traversing nature
+
+variables in interface are already final and static in nature
+
+ default method in an Interface
+ 
+The reason why the Java 8 release included default methods is pretty obvious.
+In a typical design based on abstractions, where an interface has one or multiple implementations, 
+if one or more methods are added to the interface, all the implementations will be forced to implement them too.
+Otherwise, the design will just break down.
+Default interface methods are an efficient way to deal with this issue. 
+They allow us to add new methods to an interface that are automatically available in the implementations.
+Therefore, we don't need to modify the implementing classes.
+In this way, backward compatibility is neatly preserved without having to refactor the implementers. 
+
+Declaration syntax
+
+default void defaultMethod() {
+        // default method implementation
+}
+
+
+
+    

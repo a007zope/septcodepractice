@@ -1,0 +1,30 @@
+
+
+Use of Final Keyword
+a)Final keyword is use to define constant values.
+b)it is also use to prevent inheritance
+c)to prevent method overriding
+
+
+Use of finally block
+
+finally
+{
+}
+a)finally block is mostly used after try-catch block 
+b)It is bound to execute even if there is an exception or no exception.
+c)Even if we are not catching exception properly lets suppose code is throwing ArithmeticException and we are catching 
+NullPointer exception then in that case too Finally block will be executed.
+
+Use of finalize method
+finalize()
+{
+}
+
+finalize method will be called to perform some clean up processing
+
+
+
+
+
+
