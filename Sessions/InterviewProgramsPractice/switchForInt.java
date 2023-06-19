@@ -50,14 +50,15 @@ public class switchForInt {
 		  WebElement month = driver.findElement(By.id("month"));
 		WebElement year = driver.findElement(By.id("year"));
 		
+		switchForInt i = new switchForInt();
 		
-		selectElement("value",day,"19");
-		selectElement("value",month,"4");
-		selectElement("value",year,"2015");
+		i.selectElement("value",day,"19");
+		i.selectElement("value",month,"4");
+		i.selectElement("value",year,"2015");
 		
 	}
 	
-	public static void selectElement(String locatorvalue,WebElement element,String value)
+	public  void selectElement(String locatorvalue,WebElement element,String value)
 	{
 		Select s = new Select(element);
 		switch(locatorvalue)
