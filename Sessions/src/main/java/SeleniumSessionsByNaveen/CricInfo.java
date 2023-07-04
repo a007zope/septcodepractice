@@ -50,12 +50,10 @@ public class CricInfo {
 
 		for(int i =1;i<=6;i++)
 		{
-
-			String scoreno=driver.findElement(By.xpath("(//span[text()='"+name+"']//following::td[contains(@class,'ds-w-0 ds-whitespace-nowrap ds-min-w-max ds-text-right')])["+i+"]")).getAccessibleName();
+      		String scoreno=driver.findElement(By.xpath("(//span[text()='"+name+"']//following::td[contains(@class,'ds-w-0 ds-whitespace-nowrap ds-min-w-max ds-text-right')])["+i+"]")).getAccessibleName();
 			scoreCardList.add(scoreno);
 
 		}
-
 		return scoreCardList;
 	}
 }

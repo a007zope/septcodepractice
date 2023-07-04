@@ -8,8 +8,6 @@ public class BoolInIF {
 		{
 			System.out.println("Aditya codes in an awesome way");
 		}
-
-
 		int numbers[] = {1,2,3,4,5,6,7};
 
 		int largest =numbers[0];
@@ -25,10 +23,7 @@ public class BoolInIF {
 			else if (numbers[a]<smallest)
 			{
 				smallest = numbers[a];
-				
-			}
-			
-	
+				}				
 		}
 		System.out.println("Largest number is "+largest);
 		System.out.println("smallest number is"+ smallest);

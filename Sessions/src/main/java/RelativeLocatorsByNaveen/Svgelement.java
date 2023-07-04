@@ -34,9 +34,9 @@ public class Svgelement {
 		List<WebElement> stateslist =	driver.findElements(By.xpath(svgxpath));
 
 		System.out.println(stateslist.size());
-		
-	ArrayList<String> regionnameList = new ArrayList<>();
-	System.out.println(regionnameList);
+
+		ArrayList<String> regionnameList = new ArrayList<>();
+		//System.out.println(regionnameList);
 
 		for(WebElement e : stateslist)
 		{
@@ -56,16 +56,16 @@ public class Svgelement {
 				for(WebElement r : regionList)
 				{
 					String regionname =r.getAttribute("id");
-					
+					if(regionname!="")
+					{
 					regionnameList.add(regionname);
-					
+					}
 				}
-
 			}
-
 		}
-		
 		System.out.println(regionnameList);
+
+
 
 
 
