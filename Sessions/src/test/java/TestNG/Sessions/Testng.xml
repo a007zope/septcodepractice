@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Aditya_Testng" verbose="2">
+<suite name="Aditya_Testng" thread-count ="3" parallel ="tests" verbose="2">
    
    <test name ="Google Test">   
 	   <parameter name ="url" value ="https://www.google.co.in/"/>
+	   <parameter name ="browser" value ="chrome"/>
      <classes>
      <class name ="TestNG.Sessions.GoogleTest"/>
     </classes>      
@@ -11,13 +12,15 @@
   
   <test name ="Amazon Test">	  
 	   <parameter name ="url" value ="https://www.amazon.in/"/>
+	   <parameter name ="browser" value ="firefox"/>
      <classes>
      <class name ="TestNG.Sessions.AmazonTest"/>
     </classes>      
   </test>
   
   <test name ="Opencart Test">
-	 <parameter name ="url" value ="https://naveenautomationlabs.com/opencart/"/>  
+	 <parameter name ="url" value ="https://naveenautomationlabs.com/opencart/"/> 
+	 <parameter name ="browser" value ="firefox"/> 
      <classes>
      <class name ="TestNG.Sessions.Opencart"/>
     </classes>      
