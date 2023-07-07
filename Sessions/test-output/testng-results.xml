@@ -2,64 +2,77 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-04T03:06:20Z" name="Default suite" finished-at="2023-07-04T03:07:01Z" duration-ms="41421">
+  <suite started-at="2023-07-07T05:20:34Z" name="Aditya_Testng" finished-at="2023-07-07T05:22:27Z" duration-ms="113213">
     <groups>
     </groups>
-    <test started-at="2023-07-04T03:06:20Z" name="Default test" finished-at="2023-07-04T03:07:01Z" duration-ms="41421">
-      <class name="TestNG.Sessions.Searchcartdpassign">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestNG.Sessions.Searchcartdpassign@413f69cc]" started-at="2023-07-04T03:06:20Z" name="setUp" finished-at="2023-07-04T03:06:56Z" duration-ms="36140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchProduct(java.lang.String, java.lang.String)[pri:0, instance:TestNG.Sessions.Searchcartdpassign@413f69cc]" started-at="2023-07-04T03:06:56Z" name="searchProduct" data-provider="registerData" finished-at="2023-07-04T03:06:58Z" duration-ms="1977" status="PASS">
+    <test started-at="2023-07-07T05:20:34Z" name="Google Test" finished-at="2023-07-07T05:21:12Z" duration-ms="37697">
+      <class name="TestNG.Sessions.GoogleTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNG.Sessions.GoogleTest@41c2284a]" started-at="2023-07-07T05:20:34Z" name="setup" finished-at="2023-07-07T05:21:12Z" duration-ms="37237" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[macbook]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MacBook Pro]]>
+                <![CDATA[https://www.google.co.in/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProduct -->
-        <test-method signature="searchProduct(java.lang.String, java.lang.String)[pri:0, instance:TestNG.Sessions.Searchcartdpassign@413f69cc]" started-at="2023-07-04T03:06:58Z" name="searchProduct" data-provider="registerData" finished-at="2023-07-04T03:07:00Z" duration-ms="2018" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="titleTest()[pri:0, instance:TestNG.Sessions.GoogleTest@41c2284a]" started-at="2023-07-07T05:21:12Z" name="titleTest" finished-at="2023-07-07T05:21:12Z" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.Sessions.GoogleTest@41c2284a]" started-at="2023-07-07T05:21:12Z" name="quit" finished-at="2023-07-07T05:21:12Z" duration-ms="388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- TestNG.Sessions.GoogleTest -->
+    </test> <!-- Google Test -->
+    <test started-at="2023-07-07T05:21:12Z" name="Amazon Test" finished-at="2023-07-07T05:21:50Z" duration-ms="38327">
+      <class name="TestNG.Sessions.AmazonTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNG.Sessions.AmazonTest@62e7f11d]" started-at="2023-07-07T05:21:12Z" name="setup" finished-at="2023-07-07T05:21:49Z" duration-ms="37111" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[samsung]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Samsung Galaxy Tab 10.1]]>
+                <![CDATA[https://www.amazon.in/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProduct -->
-        <test-method signature="searchProduct(java.lang.String, java.lang.String)[pri:0, instance:TestNG.Sessions.Searchcartdpassign@413f69cc]" started-at="2023-07-04T03:07:00Z" name="searchProduct" data-provider="registerData" finished-at="2023-07-04T03:07:01Z" duration-ms="1228" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="titleTest()[pri:0, instance:TestNG.Sessions.AmazonTest@62e7f11d]" started-at="2023-07-07T05:21:49Z" name="titleTest" finished-at="2023-07-07T05:21:50Z" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.Sessions.AmazonTest@62e7f11d]" started-at="2023-07-07T05:21:50Z" name="quit" finished-at="2023-07-07T05:21:50Z" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- TestNG.Sessions.AmazonTest -->
+    </test> <!-- Amazon Test -->
+    <test started-at="2023-07-07T05:21:50Z" name="Opencart Test" finished-at="2023-07-07T05:22:27Z" duration-ms="37134">
+      <class name="TestNG.Sessions.Opencart">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNG.Sessions.Opencart@1f97cf0d]" started-at="2023-07-07T05:21:50Z" name="setup" finished-at="2023-07-07T05:22:27Z" duration-ms="36753" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[canon]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Canon EOS 5D]]>
+                <![CDATA[https://naveenautomationlabs.com/opencart/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProduct -->
-      </class> <!-- TestNG.Sessions.Searchcartdpassign -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setup -->
+        <test-method signature="titleTest()[pri:0, instance:TestNG.Sessions.Opencart@1f97cf0d]" started-at="2023-07-07T05:22:27Z" name="titleTest" finished-at="2023-07-07T05:22:27Z" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.Sessions.Opencart@1f97cf0d]" started-at="2023-07-07T05:22:27Z" name="quit" finished-at="2023-07-07T05:22:27Z" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- TestNG.Sessions.Opencart -->
+    </test> <!-- Opencart Test -->
+  </suite> <!-- Aditya_Testng -->
 </testng-results>

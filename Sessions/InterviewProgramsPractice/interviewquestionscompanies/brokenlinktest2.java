@@ -1,12 +1,10 @@
 package interviewquestionscompanies;
-
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Iterator;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -49,7 +47,6 @@ public class brokenlinktest2 {
 				System.out.println(url+"url belongs to third party domain");
 				continue;
 			}
-
 			try
 			{
 				huc = (HttpURLConnection)(new URL(url).openConnection());
