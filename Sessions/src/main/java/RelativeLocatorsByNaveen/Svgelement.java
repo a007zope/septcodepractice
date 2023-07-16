@@ -35,6 +35,7 @@ public class Svgelement {
 
 		System.out.println(stateslist.size());
 		
+		
 	ArrayList<String> regionnameList = new ArrayList<>();
 	System.out.println(regionnameList);
 
