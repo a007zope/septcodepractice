@@ -106,9 +106,7 @@ public class LoginTest {
 		String home = driver.findElement(loginVerification).getText();
 		Assert.assertEquals(home,"Sales dashboard");
 
-
 	}
-
 
 	@AfterMethod
 	public void tearDown()

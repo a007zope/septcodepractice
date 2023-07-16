@@ -18,8 +18,7 @@ public class SynchronizeArrayList {
 		 * 
 		 */
 		
-		List<String> nameList =Collections.synchronizedList(new ArrayList<>());		
-		
+		List<String> nameList =Collections.synchronizedList(new ArrayList<>());			
 		nameList.add("Java");
 		nameList.add("python");
 		nameList.add("ruby");
@@ -28,7 +27,6 @@ public class SynchronizeArrayList {
 		/*for adding, removing we don't need explicit synchronization but to traverse or fetch the values from this list we have to use 
 		 explicit synchronization
 		 */
-		
 		synchronized(nameList)
 		{
 			Iterator<String> it =nameList.iterator();
@@ -37,14 +35,13 @@ public class SynchronizeArrayList {
 				System.out.println(it.next());
 			}
 		}
-		
-		
+			
 		/*
 		 * using CopyOnWriteArrayList class  its a class which is thread safe as well as synchronized
 		 * 
 		 */
 		
-		CopyOnWriteArrayList<String> empList = new CopyOnWriteArrayList<String>();
+		CopyOnWriteArrayList<String> empList = new CopyOnWriteArrayList<>();
 		empList.add("Aditya");
 		empList.add("Naveen");
 		empList.add("Rohan");
@@ -56,13 +53,6 @@ public class SynchronizeArrayList {
 		{
 			System.out.println(it.next());
 		}
-		
-		
-		
-		
-		
-		
-		
+			
 	}
-
 }
