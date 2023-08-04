@@ -1,0 +1,57 @@
+Selenium : 
+
+1)IDE ->Record and play tool
+2)RC ->selenium1 deprecated
+3) WebDriver -> Selenium WD  2->3-> 4.x
+4) Selenium Grid : os/browsers ->Parallel -remote/Server/Cloud
+
+Pros:
+Selenium is open source- customize ->WDio, appium,contribute
+-free license tool
+-cross browser support -- chrome, firefox,edge, safari
+- cross platform --windows, Mac, linux 
+but it doesnt support unix 
+--multiple language binding support- Java,python,Js, Ruby,php,c#
+--W3c webdriver protocol
+World wide web consortium -Selenium is w3c certified.
+-->browsers(W3c) <--> Automation tool (W3c)
+-- Can be integrated with any third party tools like jenkins, TestNg,Maven, Log4J.
+-- screenshot, scrolling
+--pop ups,tab, shadow dom,frames, tab
+
+Cons:
+1)It only automates browsers/web application.
+2)can not automate mobile native apps.
+3) Can not perform APi automation.
+4) -just a lib/tool which automates browsers using some actions like click, sendKeys,gettext,open browser.
+5) integrate it with unit testing frameworks : testng/junit, Pytest,Nunit,phpunit.
+6) It cannot generate any test result/report/htmlreport.
+7)It cannot do performance testing/security Testing
+8) captcha,bar code,QR code.
+9)--mail APIS,
+
+
+===========================================================
+
+POM : Project Object Model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

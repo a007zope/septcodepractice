@@ -6,8 +6,7 @@ public class LargeSmallInteger {
 	public static void main(String[] args) {
 
 		int number [] = {12,34,45,56,67,89,6,7,-19,99};
-
-
+		
 		int smallest = number[0]; //12
 		int largest = number[0]; //12
 

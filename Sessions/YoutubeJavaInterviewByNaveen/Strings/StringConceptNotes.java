@@ -24,7 +24,6 @@ public class StringConceptNotes {
  * 
 *
  
- 
 Case a
  String h = new String("selenium");// only creates 1 object
  
