@@ -101,24 +101,25 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>		
-	       
-    </dependencies>
-    
-<<<<<<< HEAD
-    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-    <dependency>
-      <groupId>io.github.bonigarcia</groupId>
-      <artifactId>webdrivermanager</artifactId>
-      <version>5.3.2</version>
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>4.10.0</version>
     </dependency>
-=======
+    
+    </dependencies>
+    
+
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager 
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.3.2</version>
+    </dependency>-->
+
+   
+
     <build>
 		<plugins>	
 			<plugin>
@@ -129,8 +130,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 					<release>11</release>
 				</configuration>
 			</plugin>
->>>>>>> 4195ef990631735af40a8ce9bf468987a753c2e1
-
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

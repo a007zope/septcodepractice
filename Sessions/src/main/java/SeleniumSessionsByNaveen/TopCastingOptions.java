@@ -4,6 +4,7 @@ import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TopCastingOptions {
@@ -11,8 +12,8 @@ public class TopCastingOptions {
 	public static void main(String[] args) {
 
 		//1 Browser specific --Cannot be used for cross browser
-		ChromeDriver driver = new ChromeDriver();
-		FirefoxDriver driver1 = new FirefoxDriver();
+		//ChromeDriver driver = new ChromeDriver();
+		//FirefoxDriver driver1 = new FirefoxDriver();
 
 		// 2 WD = new CD(); - valid Top casting- recommended
 		WebDriver driver2 = new ChromeDriver();
@@ -27,17 +28,15 @@ public class TopCastingOptions {
 		/*
 		 * If we want to run the testcases on some remote server or on AWS then we use this top casting
 		 */
-		WebDriver driver4 = new RemoteWebDriver(remoteAddress, Capabilities);
+//		WebDriver driver4 = new RemoteWebDriver(remoteAddress, Capabilities);
+//		
+//		//6 SC = new RWD();valid but not recommended as not all methods are accessible
+//		SearchContext driver5 = new RemoteWebDriver(remoteAddress, Capabilities);
+//		
+//		
+//		DesiredCapabilities hSSLErr = DesiredCapabilities.
 		
-		//6 SC = new RWD();valid but not recommended as not all methods are accessible
-		SearchContext driver5 = new RemoteWebDriver(remoteAddress, Capabilities);
 		
-		
-
-
-
-
-
 	}
 
 }

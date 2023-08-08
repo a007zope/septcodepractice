@@ -1,4 +1,4 @@
-package OtherPrograms;
+
 
 public class SwapUsingThirdVariable {
 
