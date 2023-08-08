@@ -1,6 +1,6 @@
 
 public class PalindromeForString {
-	
+
 	/*
 	 * use the logic of reversing the string for palindrome and then compare the
 	 * reversed string with that of original
@@ -14,14 +14,14 @@ public class PalindromeForString {
 
 		for(int i =len;i>=0;i--)
 		{
-       	rev = rev +n.charAt(i);
+			rev = rev +n.charAt(i);
 		}
-		
+
 		System.out.println(" The reversed String is "+ rev);
-		
+
 		if(rev==n)
 		{
-		System.out.println("Given String is a palindrome");
+			System.out.println("Given String is a palindrome");
 		}
 		else
 		{
