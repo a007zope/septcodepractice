@@ -45,14 +45,5 @@ public class PrimeNumber {
 		getPrimeNumbers(7);
 		getPrimeNumbers(25);
 
-
-
-
-
-
-
-
-
-
 	}
 }

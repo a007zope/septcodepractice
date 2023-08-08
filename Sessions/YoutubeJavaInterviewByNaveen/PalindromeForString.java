@@ -19,7 +19,7 @@ public class PalindromeForString {
 
 		System.out.println(" The reversed String is "+ rev);
 
-		if(rev==n)
+		if(rev.equals(n))
 		{
 			System.out.println("Given String is a palindrome");
 		}
