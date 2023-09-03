@@ -52,9 +52,7 @@ public class DuplicateElementsArray {
 		Set<Map.Entry<String,Integer>> entrySet = storeMap.entrySet();
 		for(Map.Entry<String,Integer> entry:entrySet) {
 			if(entry.getValue()>1) {
-				System.out.println("Duplicate element is:"+entry.getKey());
-
-			
+				System.out.println("Duplicate element is:"+entry.getKey());		
 			}
 		}
 
