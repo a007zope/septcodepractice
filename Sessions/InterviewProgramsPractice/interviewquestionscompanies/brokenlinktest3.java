@@ -13,8 +13,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class brokenlinktest3 {
 	
 	public static void main(String[] args) {
@@ -23,11 +21,11 @@ public class brokenlinktest3 {
 		String url ="";
 		int respCode = 200;
 		HttpURLConnection huc = null;	
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("--remote-allow-origins=*");
-		
-		WebDriver driver = new ChromeDriver(co);	
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions co = new ChromeOptions();
+//		co.addArguments("--remote-allow-origins=*");
+//		
+		WebDriver driver = new ChromeDriver();	
 		driver.get(homePage);
 		
 		List<WebElement> eleList =driver.findElements(By.tagName("a"));

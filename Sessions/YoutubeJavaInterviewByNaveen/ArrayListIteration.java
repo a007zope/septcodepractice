@@ -2,14 +2,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;
 
-
-
 public class ArrayListIteration {
 
 	public static void main(String[] args) {
 
 
-		ArrayList<String> tvSeries = new ArrayList<>();
+ArrayList<String> tvSeries = new ArrayList<>();
 
 		tvSeries.add("GameOfThrones");
 		tvSeries.add("The Walking Dead");
@@ -26,12 +24,7 @@ public class ArrayListIteration {
 
 			System.out.println(shows);
 		});
-
-
-
-
-
-
+		
 		System.out.println("---------------print using Iterator------------------");
 
 		//2 Using Iterator

@@ -11,9 +11,9 @@ public class CalendarHandling {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\P7111642.INAIRLT541343\\Downloads\\chrome-win64\\chrome-win64\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Downloads\\driverandchrome\\chrome-win64\\chromedriver.exe");
 		ChromeOptions co = new ChromeOptions();
-		co.setBinary("C:\\Users\\P7111642.INAIRLT541343\\Downloads\\chrome-win64\\chrome-win64\\chrome.exe");
+		co.setBinary("C:\\Users\\DELL\\Downloads\\driverandchrome\\chrome-win64\\chrome.exe");
 		
 		 driver = new ChromeDriver(co);
        driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
@@ -28,6 +28,8 @@ public class CalendarHandling {
 	public static void  selectDate(String day)
 	{
 		driver.findElement(By.xpath("//a[text()='"+day+"']")).click();
+		
+		System.out.println("Test Passed Successfully");
 		
 	}
 	

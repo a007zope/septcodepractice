@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class Flipkartsvg {
 
@@ -19,13 +19,13 @@ public class Flipkartsvg {
 	@BeforeMethod
 	public  void setUp() throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
+		
 
-		ChromeOptions co = new ChromeOptions();
+		//ChromeOptions co = new ChromeOptions();
 
-		co.addArguments("--remote-allow-origins=*");
+		//co.addArguments("--remote-allow-origins=*");
 
-		driver = new ChromeDriver(co);
+		driver = new ChromeDriver();
 
 		driver.get("https://www.flipkart.com/");	
 		driver.manage().deleteAllCookies();

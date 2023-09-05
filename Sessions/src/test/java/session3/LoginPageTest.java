@@ -7,7 +7,6 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -16,7 +15,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class LoginPageTest {
 
@@ -25,12 +24,12 @@ public class LoginPageTest {
 
 	//execution sequence : BM T1 AM , BM T2 AM
 	@BeforeMethod
-	public void setUp()
+	public  void setUp()
 	{
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("--remote-allow-origins=*");
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver(co);
+		//ChromeOptions co = new ChromeOptions();
+		//co.addArguments("--remote-allow-origins=*");
+		//WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().deleteAllCookies();
 		driver.get("https://app.hubspot.com/login");

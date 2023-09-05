@@ -14,21 +14,23 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>17</maven.compiler.release>
+    <java.version>11</java.version>
+    <maven.compiler.release>11</maven.compiler.release>
 	<extentreports-version>5.0.8</extentreports-version>
-		<aspectj.version>1.9.8</aspectj.version>
+	<selenium-java>4.12.0</selenium-java>
+	<aspectj.version>1.9.19</aspectj.version>
+	<allure.version>2.22.1</allure.version>
 	</properties>
 
   
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.3.2</version>
-        </dependency>
-        
+       
+      <dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-java}</version>
+		</dependency>  
         
         <dependency>
 		<groupId>org.projectlombok</groupId>
@@ -37,16 +39,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<scope>provided</scope>
 	</dependency>
              
-<!--https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.11.0</version>
-</dependency>
 
 
+
+
+
+    
  
-
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
@@ -102,25 +101,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>		
-	        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.10.0</version>
-    </dependency>
-    
-    </dependencies>
-    
-
-    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager 
-    <dependency>
-      <groupId>io.github.bonigarcia</groupId>
-      <artifactId>webdrivermanager</artifactId>
-      <version>5.3.2</version>
-    </dependency>-->
-
-   
-
+		</dependencies>
+		
+		
     <build>
 		<plugins>	
 			<plugin>

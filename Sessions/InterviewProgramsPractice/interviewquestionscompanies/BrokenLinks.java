@@ -12,7 +12,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrokenLinks {
 
@@ -20,9 +19,9 @@ public class BrokenLinks {
 
 	public static void main(String[] args) {
 
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("--remote-allow-origins=*");
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions co = new ChromeOptions();
+//		co.addArguments("--remote-allow-origins=*");
 		String homepage ="https://www.zlti.com/";
 
 		String url ="";
@@ -30,7 +29,7 @@ public class BrokenLinks {
 
 		int respCode = 200;
 
-		driver = new ChromeDriver(co);
+		driver = new ChromeDriver();
 
 		driver.manage().window().maximize();
 

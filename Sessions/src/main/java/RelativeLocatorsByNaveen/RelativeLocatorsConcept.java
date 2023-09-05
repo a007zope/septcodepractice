@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
 public class RelativeLocatorsConcept {
@@ -13,10 +13,10 @@ public class RelativeLocatorsConcept {
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(co);
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions co = new ChromeOptions();
+//		co.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver();
 //		driver.get("https://www.aqi.in/dashboard/canada");	
 //		Thread.sleep(2000);
 //		WebElement ele = driver.findElement(By.linkText("St Thomas, Canada"));

@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Svgelement {
 
@@ -17,10 +17,10 @@ public class Svgelement {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(co);
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions co = new ChromeOptions();
+//		co.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver();
 		Thread.sleep(3000);
 
 		driver.get("https://petdiseasealerts.org/forecast-map/");

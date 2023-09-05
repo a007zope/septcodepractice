@@ -9,18 +9,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CricInfo {
 
 	static WebDriver driver;
 
 	public static void main(String[] args) {
-
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(co);
+//
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions co = new ChromeOptions();
+//		co.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver();
 		driver.get("https://www.espncricinfo.com/series/australia-a-in-new-zealand-2023-1365973/new-zealand-a-vs-australia-a-1st-unofficial-test-1365976/full-scorecard");
 		//		System.out.println(getWicketTakerName("Xavier Bartlett"));
 		//		System.out.println(getWicketTakerName("Campbell Kellaway"));

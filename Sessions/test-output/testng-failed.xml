@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Failed suite [Aditya_Testng]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="3" parallel="tests" name="Opencart Test(failed)" verbose="2">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://naveenautomationlabs.com/opencart/"/>
+    <classes>
+      <class name="TestNG.Sessions.Opencart">
+        <methods>
+          <include name="quit"/>
+          <include name="setup"/>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- TestNG.Sessions.Opencart -->
+    </classes>
+  </test> <!-- Opencart Test(failed) -->
   <test thread-count="3" parallel="tests" name="Google Test(failed)" verbose="2">
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="https://www.google.co.in/"/>
@@ -14,17 +27,4 @@
       </class> <!-- TestNG.Sessions.GoogleTest -->
     </classes>
   </test> <!-- Google Test(failed) -->
-  <test thread-count="3" parallel="tests" name="Opencart Test(failed)" verbose="2">
-    <parameter name="browser" value="firefox"/>
-    <parameter name="url" value="https://naveenautomationlabs.com/opencart/"/>
-    <classes>
-      <class name="TestNG.Sessions.Opencart">
-        <methods>
-          <include name="quit"/>
-          <include name="setup"/>
-          <include name="titleTest"/>
-        </methods>
-      </class> <!-- TestNG.Sessions.Opencart -->
-    </classes>
-  </test> <!-- Opencart Test(failed) -->
 </suite> <!-- Failed suite [Aditya_Testng] -->

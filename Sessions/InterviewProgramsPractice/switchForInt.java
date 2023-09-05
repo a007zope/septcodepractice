@@ -5,8 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class switchForInt {
 	
 	static WebDriver driver;
@@ -40,10 +38,10 @@ public class switchForInt {
 //		default:System.out.println("please select car");
 //		
 //		}
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("--remote-allow-origins=*"); 
-		driver = new ChromeDriver(co);
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions co = new ChromeOptions();
+//		co.addArguments("--remote-allow-origins=*"); 
+		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/reg");
 		
 		 WebElement day = driver.findElement(By.id("day"));

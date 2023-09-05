@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class TotalPageLinks {
 
@@ -17,11 +17,11 @@ public class TotalPageLinks {
 
 	public static void main(String[] args) {
 
-		WebDriverManager.chromedriver().setup();
-		// chromedriver
-		ChromeOptions a = new ChromeOptions();
-		a.addArguments("--remote-allow-origins=*");
-		WebDriver driver = new  ChromeDriver(a);
+//		WebDriverManager.chromedriver().setup();
+//		// chromedriver
+//		ChromeOptions a = new ChromeOptions();
+//		a.addArguments("--remote-allow-origins=*");
+		WebDriver driver = new  ChromeDriver();
 		driver.get("https:\\www.amazon.in");
 		List<WebElement> eleList =driver.findElements(By.tagName("a"));
 

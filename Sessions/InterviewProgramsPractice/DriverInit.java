@@ -2,8 +2,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class DriverInit {
 
 	private static WebDriver driver ;
@@ -15,10 +13,10 @@ public class DriverInit {
 
 	public WebDriver openBrowser()
 	{
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("-remote-allow-origins=*");
-		driver = new ChromeDriver(co);
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions co = new ChromeOptions();
+//		co.addArguments("-remote-allow-origins=*");
+		driver = new ChromeDriver();
 		
 		
 		return driver;

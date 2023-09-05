@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class Crmpro {
 
@@ -17,10 +17,10 @@ public class Crmpro {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(co);
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions co = new ChromeOptions();
+//		co.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver();
 		driver.get("https://classic.crmpro.com/");
 		Thread.sleep(5000);
 		driver.findElement(By.name("username")).sendKeys("newautomation");

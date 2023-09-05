@@ -2,40 +2,74 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-07T09:34:28Z" name="Aditya_Testng" finished-at="2023-07-07T09:35:48Z" duration-ms="80364">
+  <suite started-at="2023-09-05T04:59:50Z" name="Aditya_Testng" finished-at="2023-09-05T05:00:19Z" duration-ms="28285">
     <groups>
     </groups>
-    <test started-at="2023-07-07T09:34:28Z" name="Amazon Test" finished-at="2023-07-07T09:35:48Z" duration-ms="80352">
-      <class name="TestNG.Sessions.AmazonTest">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:TestNG.Sessions.AmazonTest@62e7f11d]" started-at="2023-07-07T09:34:28Z" name="setup" finished-at="2023-07-07T09:35:43Z" duration-ms="74854" status="PASS">
+    <test started-at="2023-09-05T04:59:50Z" name="Opencart Test" finished-at="2023-09-05T05:00:19Z" duration-ms="28258">
+      <class name="TestNG.Sessions.Opencart">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:TestNG.Sessions.Opencart@4632cfc]" started-at="2023-09-05T04:59:50Z" name="setup" finished-at="2023-09-05T05:00:09Z" duration-ms="18255" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://www.amazon.in/]]>
+                <![CDATA[https://naveenautomationlabs.com/opencart/]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="titleTest()[pri:0, instance:TestNG.Sessions.AmazonTest@62e7f11d]" started-at="2023-07-07T09:35:43Z" name="titleTest" finished-at="2023-07-07T09:35:43Z" duration-ms="10" status="PASS">
+        <test-method signature="titleTest()[pri:0, instance:TestNG.Sessions.Opencart@4632cfc]" started-at="2023-09-05T05:00:09Z" name="titleTest" finished-at="2023-09-05T05:00:16Z" duration-ms="7051" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your Store] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your Store] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at TestNG.Sessions.Opencart.titleTest(Opencart.java:12)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.Sessions.AmazonTest@62e7f11d]" started-at="2023-07-07T09:35:43Z" name="quit" finished-at="2023-07-07T09:35:48Z" duration-ms="5470" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.Sessions.Opencart@4632cfc]" started-at="2023-09-05T05:00:16Z" name="quit" finished-at="2023-09-05T05:00:19Z" duration-ms="2241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- TestNG.Sessions.AmazonTest -->
-    </test> <!-- Amazon Test -->
-    <test started-at="2023-07-07T09:34:28Z" name="Google Test" finished-at="2023-07-07T09:35:48Z" duration-ms="80358">
+      </class> <!-- TestNG.Sessions.Opencart -->
+    </test> <!-- Opencart Test -->
+    <test started-at="2023-09-05T04:59:50Z" name="Google Test" finished-at="2023-09-05T05:00:19Z" duration-ms="28258">
       <class name="TestNG.Sessions.GoogleTest">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:TestNG.Sessions.GoogleTest@41c2284a]" started-at="2023-07-07T09:34:28Z" name="setup" finished-at="2023-07-07T09:35:42Z" duration-ms="74177" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:TestNG.Sessions.GoogleTest@37fdfb05]" started-at="2023-09-05T04:59:50Z" name="setup" finished-at="2023-09-05T05:00:06Z" duration-ms="15646" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="titleTest()[pri:0, instance:TestNG.Sessions.GoogleTest@41c2284a]" started-at="2023-07-07T09:35:42Z" name="titleTest" finished-at="2023-07-07T09:35:43Z" duration-ms="664" status="FAIL">
+        <test-method signature="titleTest()[pri:0, instance:TestNG.Sessions.GoogleTest@37fdfb05]" started-at="2023-09-05T05:00:06Z" name="titleTest" finished-at="2023-09-05T05:00:16Z" duration-ms="9560" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Google] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]]]>
@@ -89,51 +123,19 @@ at java.base/java.lang.Thread.run(Thread.java:1589)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.Sessions.GoogleTest@41c2284a]" started-at="2023-07-07T09:35:43Z" name="quit" finished-at="2023-07-07T09:35:48Z" duration-ms="5469" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c8d6693-d379-4c16-80cb-2a4fb7a52dae, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0, moz:accessibilityChecks: false, moz:buildID: 20230629134642, moz:debuggerAddress: 127.0.0.1:55548, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31536, moz:profile: C:\Users\P71116~1.INA\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55548/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c8d6693-d379-4c16-80cb-2a4fb7a52dae, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0, moz:accessibilityChecks: false, moz:buildID: 20230629134642, moz:debuggerAddress: 127.0.0.1:55548, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31536, moz:profile: C:\Users\P71116~1.INA\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55548/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.Sessions.GoogleTest@37fdfb05]" started-at="2023-09-05T05:00:16Z" name="quit" finished-at="2023-09-05T05:00:19Z" duration-ms="2239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- TestNG.Sessions.GoogleTest -->
     </test> <!-- Google Test -->
-    <test started-at="2023-07-07T09:34:28Z" name="Opencart Test" finished-at="2023-07-07T09:35:48Z" duration-ms="80364">
-      <class name="TestNG.Sessions.Opencart">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:TestNG.Sessions.Opencart@1f97cf0d]" started-at="2023-07-07T09:34:28Z" name="setup" finished-at="2023-07-07T09:35:44Z" duration-ms="75873" status="PASS">
+    <test started-at="2023-09-05T04:59:50Z" name="Amazon Test" finished-at="2023-09-05T05:00:19Z" duration-ms="28285">
+      <class name="TestNG.Sessions.AmazonTest">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:TestNG.Sessions.AmazonTest@675ffd1d]" started-at="2023-09-05T04:59:50Z" name="setup" finished-at="2023-09-05T05:00:16Z" duration-ms="25291" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://naveenautomationlabs.com/opencart/]]>
+                <![CDATA[https://www.amazon.in/]]>
               </value>
             </param>
             <param index="1">
@@ -145,54 +147,37 @@ at java.base/java.lang.Thread.run(Thread.java:1589)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="titleTest()[pri:0, instance:TestNG.Sessions.Opencart@1f97cf0d]" started-at="2023-07-07T09:35:44Z" name="titleTest" finished-at="2023-07-07T09:35:48Z" duration-ms="4425" status="FAIL">
+        <test-method signature="titleTest()[pri:0, instance:TestNG.Sessions.AmazonTest@675ffd1d]" started-at="2023-09-05T05:00:16Z" name="titleTest" finished-at="2023-09-05T05:00:16Z" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.Sessions.AmazonTest@675ffd1d]" started-at="2023-09-05T05:00:16Z" name="quit" finished-at="2023-09-05T05:00:19Z" duration-ms="2224" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Tried to run command without establishing a connection
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c8d6693-d379-4c16-80cb-2a4fb7a52dae, getTitle {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0, moz:accessibilityChecks: false, moz:buildID: 20230629134642, moz:debuggerAddress: 127.0.0.1:55548, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31536, moz:profile: C:\Users\P71116~1.INA\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55548/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4c8d6693-d379-4c16-80cb-2a4fb7a52dae]]>
+Command: [bc1186e9-f2a8-4247-9eb5-968f95820c8f, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0, moz:accessibilityChecks: false, moz:buildID: 20230824132758, moz:debuggerAddress: 127.0.0.1:14592, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25584, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:14592/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c8d6693-d379-4c16-80cb-2a4fb7a52dae, getTitle {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0, moz:accessibilityChecks: false, moz:buildID: 20230629134642, moz:debuggerAddress: 127.0.0.1:55548, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31536, moz:profile: C:\Users\P71116~1.INA\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55548/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4c8d6693-d379-4c16-80cb-2a4fb7a52dae
+Command: [bc1186e9-f2a8-4247-9eb5-968f95820c8f, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0, moz:accessibilityChecks: false, moz:buildID: 20230824132758, moz:debuggerAddress: 127.0.0.1:14592, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25584, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:14592/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:315)
-at TestNG.Sessions.Opencart.titleTest(Opencart.java:11)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:128)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1589)
@@ -201,63 +186,8 @@ at java.base/java.lang.Thread.run(Thread.java:1589)
           </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.Sessions.Opencart@1f97cf0d]" started-at="2023-07-07T09:35:48Z" name="quit" finished-at="2023-07-07T09:35:48Z" duration-ms="34" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to stop.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c8d6693-d379-4c16-80cb-2a4fb7a52dae, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0, moz:accessibilityChecks: false, moz:buildID: 20230629134642, moz:debuggerAddress: 127.0.0.1:55548, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31536, moz:profile: C:\Users\P71116~1.INA\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55548/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'INAIRLT541343', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4c8d6693-d379-4c16-80cb-2a4fb7a52dae, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0, moz:accessibilityChecks: false, moz:buildID: 20230629134642, moz:debuggerAddress: 127.0.0.1:55548, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31536, moz:profile: C:\Users\P71116~1.INA\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55548/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
-at TestNG.Sessions.Basetest.quit(Basetest.java:48)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.afterRun(TestRunner.java:725)
-at org.testng.TestRunner.run(TestRunner.java:509)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
-Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.os.CommandLine.waitFor(long)" because "this.service.process" is null
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-... 22 more
-Caused by: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.os.CommandLine.waitFor(long)" because "this.service.process" is null
-at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-... 3 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- TestNG.Sessions.Opencart -->
-    </test> <!-- Opencart Test -->
+      </class> <!-- TestNG.Sessions.AmazonTest -->
+    </test> <!-- Amazon Test -->
   </suite> <!-- Aditya_Testng -->
 </testng-results>

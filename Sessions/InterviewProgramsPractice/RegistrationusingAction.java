@@ -9,8 +9,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class RegistrationusingAction {
 
 	static WebDriver driver;
@@ -22,13 +20,13 @@ public class RegistrationusingAction {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
+		
 
-		ChromeOptions co = new ChromeOptions();
+//		ChromeOptions co = new ChromeOptions();
+//
+//		co.addArguments("--remote-allow-origins=*");
 
-		co.addArguments("--remote-allow-origins=*");
-
-		driver = new ChromeDriver(co);
+		driver = new ChromeDriver();
 
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/register");
 
